@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/corr_icon.png" type="image/x-icon">
+    <title>Corregedoria - Intimar</title>
+    <script>
+        // Função para pegar o token da URL e enviá-lo ao servidor
+        function sendTokenToServer() {
+            const hash = window.location.hash;
+            const params = new URLSearchParams(hash.replace('#', '?'));
+            const accessToken = params.get('access_token');
+
+            if (accessToken) {
+                // Enviar o token para o servidor
+                fetch(`/intimar?access_token=${accessToken}`)
+                    .then(response => response.text())
+                    .then(data => {
+                        document.body.innerHTML = data; // Exibir a resposta do servidor
+                    })
+                    .catch(error => {
+                        console.error('Erro ao enviar o token para o servidor:', error);
+                    });
+            } else {
+                document.body.innerHTML = 'Token de acesso não encontrado.';
+            }
+        }
+
+        // Chama a função ao carregar a página
+        window.onload = sendTokenToServer;
+    </script>
+</head>
+<body bgcolor="black">
+   
+</body>
+</html>

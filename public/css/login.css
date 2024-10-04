@@ -1,0 +1,111 @@
+:root {
+    --cor_principal: rgb(0, 0, 0);
+    --cor_segundaria: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cor_principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: var(--cor_segundaria);
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_icon,
+.container_login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container_icon img {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.container_login {
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+
+#icon_discord {
+    width: 250px;
+    margin: 50px 0;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 80%;
+    background-color: black;
+    margin: 0 20px;
+}
+
+#icon_metropole {
+    display: flex;
+   
+}
+
+button {
+    padding: 20px 80px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--cor_principal);
+    color: var(--cor_segundaria);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a9a9a9;
+}
+
+footer {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    color: var(--cor_segundaria);
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .vertical-line {
+        width: 80%;
+        height: 2px;
+        margin: 20px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}

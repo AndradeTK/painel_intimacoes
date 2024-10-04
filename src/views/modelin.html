@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/corr_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/global.css" />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Inicio - Painel Corregedoria</title>
+  </head>
+
+<!-- Começo Side Bar -->
+
+  <nav id="sidebar">
+    <div id="sidebar_content">
+      <div id="user">
+        <img src="img/avatar2.png" id="user_avatar" alt="Avatar" />
+
+        <p id="user_infos">
+          <span class="item-description"> Logan Andrade </span>
+          <span class="item-description" > Cabo </span>
+        </p>
+      </div>
+
+      <ul id="side_items">
+        <li class="side-item active">
+            <a href="/home">
+            <i class="fa-solid fa-chart-line"></i>
+            <span class="item-description"> Início </span>
+          </a>
+        </li>
+
+        
+        <li class="side-item">
+          <a href="/inqueritos">
+            <i class="fa-regular fa-folder-open"></i>
+            <span class="item-description"> Inquéritos </span>
+          </a>
+        </li>
+
+
+        <li class="side-item">
+          <a href="/oficiais">
+            <i class="fa-solid fa-user-group"></i>
+            <span class="item-description"> Oficiais </span>
+          </a>
+        </li>
+
+
+        <li class="side-item">
+          <a href="/blitz">
+            <i class="fa-solid fa-road-barrier"></i>
+            <span class="item-description"> Blitz </span>
+          </a>
+        </li>
+
+        <li class="side-item">
+          <a href="/imagens">
+            <i class="fa-solid fa-image"></i>
+            <span class="item-description"> Imagens </span>
+          </a>
+        </li>
+
+
+        <li class="side-item">
+          <a href="/logs">
+            <i class="fa-solid fa-clock"></i>
+            <span class="item-description"> Logs </span>
+          </a>
+        </li>
+        
+
+        <li class="side-item">
+          <a href="/configuracoes">
+            <i class="fa-solid fa-gear"></i>
+            <span class="item-description"> Configurações </span>
+          </a>
+        </li>
+      </ul>
+
+      <button id="open_btn">
+        <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <a href="/logout"> <div id="logout">
+      <button id="logout_btn">
+        <i class="fa-solid fa-right-from-bracket"></i>
+      
+     <span class="item-description"> Logout </span>
+      </button>
+    </div></a>
+  </nav>
+
+  <!-- Fim Side Bar -->
+
+  <body>
+    <div class="corpo">
+
+
+      <header>
+        
+        <div class="logo">
+          <img src="img/corr_icon.png" id="corr_icon" />
+          <div class="logo-text">
+            <h1>CORREGEDORIA</h1>
+            <h2>METRÓPOLE</h2>
+          </div>
+        </div>
+
+      
+
+
+      </header>
+
+      <main>
+       
+
+
+
+<!--Inquéritos-->
+<div class="homemenu_container">
+  <div class="homemenu_header">
+    <div class="homemenu_titulo">
+      <h1><i class="fa-solid fa-file-lines"></i>Inquéritos</h1>
+    </div>
+    <div class="homemenu_nav">
+      <a href="/criar_inquerito"><i class="fa-solid fa-square-plus"></i> </a>
+    <a href="/inqueritos">  <i class="fa-solid fa-magnifying-glass" ></i></a>
+    </div>
+  </div>
+  <div class="vertical-line2"></div>
+  <div class="homemenu_num">
+    <h1>20394</h1>
+  </div>
+</div>
+
+<!--
+  Oficiais Cadastrados
+-->
+<div class="homemenu_container">
+  <div class="homemenu_header">
+    <div class="homemenu_titulo">
+      <h1><i class="fa-solid fa-user-group"></i>Oficiais Cadastrados</h1>
+    </div>
+    <div class="homemenu_nav">
+     <a href="/criar_oficial"> <i class="fa-solid fa-square-plus" ></i> </a>
+     <a href="/oficiais"> <i class="fa-solid fa-magnifying-glass" ></i></a>
+    </div>
+  </div>
+  <div class="vertical-line2"></div>
+  <div class="homemenu_num">
+    <h1>20394</h1>
+  </div>
+</div>
+<!--
+  Oficiais Online
+-->
+<div class="homemenu_container">
+  <div class="homemenu_header">
+    <div class="homemenu_titulo">
+      <h1><i class="fa-solid fa-globe"></i>Corregedores Online</h1>
+    </div>
+    <div class="homemenu_nav">
+      <i class="fa-solid fa-magnifying-glass" ></i>
+    </div>
+  </div>
+  <div class="vertical-line2"></div>
+  <div class="homemenu_num">
+    <h1>3</h1>
+    
+  </div>
+</div>
+
+<!--
+  Oficiais Cadastrados
+-->
+<div class="homemenu_container">
+  <div class="homemenu_header">
+    <div class="homemenu_titulo">
+      <h1><i class="fa-solid fa-bullhorn"></i>Avisos</h1>
+    </div>
+    <div class="homemenu_nav">
+      <i class="fa-solid fa-square-plus" ></i> 
+      <i class="fa-solid fa-magnifying-glass" ></i>
+    </div>
+  </div>
+  <div class="vertical-line2"></div>
+  <div class="homemenu_num2">
+    <h1>Façam os Inquéritos certinhos, senão serão punidos!</h1>
+    <h2>Spt Diana Denvers | 25/08/2024 ás 13:59</h2>
+  </div>
+</div>
+
+      
+
+
+
+</main>
+<div class="vertical-line"></div>
+    </div>
+  </body>
+
+  <script>
+    document.getElementById("open_btn").addEventListener("click", function () {
+      document.getElementById("sidebar").classList.toggle("open-sidebar");
+    });
+
+
+
+
+
+
+    document.getElementById("logout_btn").addEventListener("click", function(event) {
+    event.preventDefault();  // Previne a navegação imediata ao clicar em logout
+    document.getElementById("confirmationBox").classList.remove("hidden");
+});
+
+document.getElementById("cancelButton").addEventListener("click", function() {
+    document.getElementById("confirmationBox").classList.add("hidden");
+});
+
+document.getElementById("confirmExitButton").addEventListener("click", function() {
+    window.location.href = "/index.html";  // Redireciona para a página de login
+});
+
+  </script>
+</html>
