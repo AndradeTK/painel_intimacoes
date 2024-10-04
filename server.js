@@ -297,8 +297,8 @@ app.use((err, req, res, next) => {
   res.status(500).render('error404', { erro: 500 });
   
 });
-
-app.listen(3000, function(erro) {
+var port = process.env.PORT || 3000
+app.listen(port, function(erro) {
   if(erro){
       console.log("❌ » Erro :" + erro)
   }
