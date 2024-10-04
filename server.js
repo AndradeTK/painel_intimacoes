@@ -215,7 +215,7 @@ client.login(process.env.DISCORD_AUTH);
 
 app.get('/', function (req, res) {
   try {
-    res.sendFile(__dirname + "/index.html");
+    res.send("funcionando")
   } catch (error) {
     res.status(500).render('error404', {erro: 500});
   }
