@@ -20,7 +20,7 @@ const client = new Client({
 
 // Middleware para processar os dados enviados pelo formulário
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public')); // Pasta 'public' para o HTML
+app.use(express.static(path.join(__dirname, 'public')));
 
 // ------------------ Express e EJS --------------------- //
 app.set('view engine', 'ejs');
